@@ -1,0 +1,88 @@
+html {
+    font-family: sans-serif;
+}
+
+contents {
+    display: block;
+    margin: 1em;
+    color: #333;
+}
+
+tree {
+    display: block;
+}
+
+treeroot, treenode, tree grey, tree uparrow {
+    border-radius: 3px;
+    display: block;
+    padding: 2px 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+tree treewrap {
+    display: grid;
+    border: unset; padding: unset;
+    gap: 4px;
+}
+
+tree treeelem {
+    border: unset; padding: unset;
+    display: block;
+}
+
+tree treenode[depth="0"] {
+    border-color: #01A63D;
+    background: #cafdd8;
+    color: #01A63D;
+}
+tree treenode[depth="1"] {
+    border-color: #009d81;
+    background: #E8FCF5;
+    color: #009d81;
+}
+tree treenode[depth="2"] {
+    border-color: #eca400;
+    background: #fcf3ec;
+    color: #eca400;
+}
+tree treenode[depth="3"] {
+    border-color: #ef00b2;
+    background: #FAE7F1;
+    color: #ef00b2;
+}
+tree treenode[depth="4"] {
+    border-color: #ac00e5;
+    background: #F2E9FA;
+    color: #ac00e5;
+}
+
+tree grey {
+    font-style: oblique;
+    color: #888;
+    background: #eee;
+    border-color: #888;
+}
+
+tree uparrow {
+    border-color: #00000000;
+}
+
+tree uparrow::before {
+    content: "⬆";
+    
+}
+
+tree treeroot {
+    border: unset; padding: unset;
+    font-size: 125%;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+treeelem[isleaf] > * {
+/*     height: unset; */
+}

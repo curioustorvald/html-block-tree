@@ -1,0 +1,28 @@
+DISPLAY OUT
+	WORLD
+		LIGHT BLEND
+			LIGHTMAP
+				&zwj;<span style="color:#F66969">R</span><span style="color:#55A934">G</span><span style="color:#349CEE">B</span><span style="color:#959595">&middot;</span><span style="color:#5A5A5A">UV</span><br>MODEL
+		TILEMAP RENDERER
+			TILE LOADER
+			WEATHER BLENDER
+		ACTORS
+			SPRITES
+				SPRITE ASSEMBLER
+					ANIMATION DESCRIPTION LANGUAGE
+				SPRITE LOADER
+			PHYSICS
+	SKYBOX
+		PARAMETRIC SKY MODEL
+		WEATHER MODEL
+	USER INTERFACE
+		COMPOSITING
+			HANDLER
+			CANVAS
+AUDIO OUT
+	<grey>SPATIAL MIXER</grey>
+		<grey>WORLD</grey>
+		<grey>PLAYER</grey>
+	<grey>BGM</grey>
+RUMBLE FEEDBACK
+	<grey>PLAYER</grey>
